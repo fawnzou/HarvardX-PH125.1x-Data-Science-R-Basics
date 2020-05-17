@@ -41,8 +41,8 @@ x <- c(31, 4, 15, 92, 65)<br />
 x<br />
 sort(x)    #puts elements in order<br />
 
-index <- order(x)    #returns index that will put x in order
-x[index]    #rearranging by this index puts elements in order
+index <- order(x)    #returns index that will put x in order<br />
+x[index]    #rearranging by this index puts elements in order<br />
 order(x)
 
 murders$state[1:10]<br />
@@ -55,7 +55,23 @@ max(murders$total)    #highest number of total murders<br />
 i_max <- which.max(murders$total)    #index with highest number of murders<br />
 murders$state[i_max]    #state name with highest number of total murders<br />
 
-x <- c(31, 4, 15, 92, 65)
-x
-rank(x)    #returns ranks (smallest to largest)
+x <- c(31, 4, 15, 92, 65)<br />
+x<br />
+rank(x)    #returns ranks (smallest to largest)<br />
+
+## Vector Arithmetic<br />
+In R, arithmetic operations on vectors occur element-wise.<br />
+### Code<br />
+#The name of the state with the maximum population is found by doing the following<br />
+murders$state[which.max(murders$population)]<br />
+
+#how to obtain the murder rate<br />
+murder_rate <- murders$total / murders$population * 100000<br />
+
+#ordering the states by murder rate, in decreasing order<br />
+murders$state[order(murder_rate, decreasing=TRUE)]<br />
+
+
+
+
 
