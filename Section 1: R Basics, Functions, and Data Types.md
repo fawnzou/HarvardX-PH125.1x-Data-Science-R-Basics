@@ -13,11 +13,11 @@ Run an entire script:  Ctrl+Shift+Enter on Windows Command+Shift+Return on Mac, 
 Run a single line of script: Ctrl+Enter on Windows and Command+Return on Mac while the cursor is pointing to that line, or select the chunk and click "run"<br />
 Open a new script: Ctrl+Shift+N on Windows and Command+Shift+N on Mac<br />
 
-### Key Points
-To define a variable, we may use the assignment symbol, <-.
+### Key Points<br />
+To define a variable, we may use the assignment symbol, <-.<br />
 There are two ways to see the value stored in a variable:<br />
-(1) type the variable name into the console and hit Return, or (2) use the print() function by typing print(variable_name) and hitting
-Return.<br />
+(1) type the variable name into the console and hit Return, <br />
+(2) use the print() function by typing print(variable_name) and hitting Return.<br />
 Objects are things that are stored in named containers in R.  They can be variables, functions, etc.<br />
 The ls() function shows the names of the objects saved in your workspace.<br />
 
